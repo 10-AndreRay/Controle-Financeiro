@@ -4,7 +4,7 @@
 ## Acesse o link do projeto:
 https://10-andreray.github.io/Controle-Financeiro/
 
-![appcomscroll](https://user-images.githubusercontent.com/81325811/168166707-f003d4b3-7f46-4597-b83d-3012441444f7.png)
+https://user-images.githubusercontent.com/81325811/168168132-84a67b1e-ae6c-4949-b310-2e795619c142.mp4
 
 ## Desenvolvido com:
 -> HTML </br>

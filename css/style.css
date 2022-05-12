@@ -1,0 +1,170 @@
+/*Geral*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+body{
+    background-color: #165580;
+    
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px 50px;
+}
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.sublinhado{
+    font-weight: bold;
+    margin-top: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    font-size: 20px;
+}
+.saldo-negativo{
+    color: #F25050;
+}
+.saldo-positivo{
+    color: #49BF51;
+}
+.nome-transacao{
+    max-width: 200px;
+}
+.transacoes-scroll{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/*Saldo atual*/
+#saldo-atual{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#p-saldo{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+/*Saldo receitas e despesas*/
+#div-receita-despesa{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    background-color: #012030;
+    margin: 20px 0;
+}
+.card-receita-despesa{
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border-right: 2px solid #ccc;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#p-receita, #p-despesa{
+    font-size: 25px;
+}
+#p-receita, #receita{
+    color: #49BF51
+}
+#p-despesa, #despesa{
+    color: #F25050
+}
+.sem-borda{
+    border-color: transparent;
+}
+
+/*Transações*/
+#transacoes{
+    margin-bottom: 10px;
+}
+#div-scroll{
+    margin-bottom: 30px;
+}
+#lista-transacoes li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #012030;
+    margin-top: 10px;
+}
+#lista-transacoes li i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.span-positivo{
+    color: #49BF51;
+}
+.span-negativo{
+    color: #F25050;
+}
+.valor-e-excluir{
+    display: flex;
+    gap: 10px;
+}
+
+/*Form adicionar transações*/
+form{
+    margin-top: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input{
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    color: #012030;
+    font-weight: bold;
+}
+#p-valor{
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: -9px;
+}
+#btn-adicionar{
+    background-color: #49BF51;
+    cursor: pointer;
+    border-color: transparent;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: color .5s ease;
+}
+#btn-adicionar:hover{
+    color: #fff;
+}
+
+/*Responsivo*/
+@media (max-width: 400px){
+    #p-saldo{
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    #card-receita-despesa, #p-receita, #p-despesa{
+        font-size: 14px;
+    }
+    li p{
+        font-size: 12px;
+    }
+    #div-receita-despesa{
+        padding: 10px 0;
+    }
+    .span-negativo, .span-positivo, #p-receita, #p-despesa{
+        font-size: 13px;
+    }
+    .nome-transacao{
+        max-width: 80px;
+    }
+    #lista-transacoes li i {
+        font-size: 15px;
+    }
+}

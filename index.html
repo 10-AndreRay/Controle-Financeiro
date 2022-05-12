@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JS-->
+    <script src="js/main.js" defer></script>
+
+    <title>Controle Financeiro | RayDEV</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Controle Financeiro</h3>
+        <div id="saldo-atual">
+            <p>Saldo atual</p>
+            <p id="p-saldo">r$ <span id="saldo">0</span></p>
+        </div>
+        <div id="div-receita-despesa">
+            <div class="card-receita-despesa">
+                <p>receitas</p>
+                <p id="p-receita">r$ <span id="receita">0</span></p>
+            </div>
+            <div class="card-receita-despesa sem-borda">
+                <p>Despesas</p>
+                <p id="p-despesa">r$ <span id="despesa">0</span></p>
+            </div>
+        </div>
+        <div id="transacoes">
+            <p class="sublinhado">Transações</p>
+        </div>
+        <div id="div-scroll">
+            <ul id="lista-transacoes">
+                <!--Li Transações aqui-->
+            </ul>
+        </div>
+        <div id="adicionar-transacoes">
+            <p class="sublinhado">Adicionar transação</p>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome da transação" required>
+                <label for="valor">Valor</label>
+                <p id="p-valor" class="saldo-negativo">use o sinal (-) para informar despesas</p>
+                <input type="number" name="valor" id="valor" placeholder="Valor da transação" required>
+                <input type="submit" value="Adicionar" id="btn-adicionar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
